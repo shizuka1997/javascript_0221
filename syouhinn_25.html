@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <title>JavaScriptの練習・関数</title>
+    </head>
+    <body>
+        <script>
+            const products = ['テレビ','冷蔵庫','机','スマホ','本棚','椅子','テーブル'];
+
+            const search = (items, target) => {
+                const result = items.filter(item => item === target);
+
+                if(result.length) {
+                    console.log('商品が見つかりました！');
+                } else {
+                    console.log('お探しの商品は見つかりませんでした');
+                }
+            }
+
+            search(products, 'スマホ');
+
+        </script>
+    </body>
+</html>

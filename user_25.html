@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <title>JavaScriptの練習</title>
+    </head>
+    <body>
+        <script>
+            const obj = {
+                getThis1: function() { return this },
+                getThis2: () => this
+            };
+
+            console.log(obj.getThis1());
+            console.log(obj.getThis2());
+
+        </script>
+    </body>
+</html>

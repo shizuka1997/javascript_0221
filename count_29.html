@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <title>JavaScriptの練習・カウント</title>
+    </head>
+    <body>
+        <textarea id="text" cols="50" rows="7"></textarea>
+        <p id="count">0文字</p>
+        <script>
+            // JavaScript を記述する場所
+            const text = document.getElementById("text");
+            const count = document.getElementById("count");
+
+            text.addEventListener("keyup", () => {
+                // 文字数をカウントする処理を記述する
+
+            });
+
+            text.addEventListener("keyup", () => {
+                // テキストエリアの文字列を取得する
+                const inputText = text.value;
+
+                // 文字数を取得＆出力する
+                count.textContent = inputText.length + '文字';
+            });
+
+            String.replace(/\n|\s/g, "");
+
+        </script>
+    </body>
+</html>

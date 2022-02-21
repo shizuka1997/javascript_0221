@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <title>JavaScriptの練習</title>
+    </head>
+    <body>
+        <script>
+            const user = ['田中太郎','佐藤一郎','山田次郎', '山田三郎', '伊藤花子'];
+            user.forEach(name => {
+                if(name === '山田三郎') {
+
+                    console.log('山田三郎さんは存在します');
+
+                } else if(name === '山田花子') {
+                    console.log('山田花子さんは存在します');
+                } else if(name === '田中三郎') {
+                    console.log('田中三郎さんは存在します');
+                } else {
+                    console.log('該当するユーザーは存在しません');
+                }
+            })
+        </script>
+    </body>
+</html>

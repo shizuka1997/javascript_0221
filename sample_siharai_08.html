@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <title>JavaScriptの練習</title>
+    </head>
+    <body>
+
+
+        <script>
+            //ここにJavaScriptを記述する
+            const Dollar = 108;
+            const getDollarToYen = (number) => {
+                return number * Dollar;
+            }
+
+            while(true) {
+                const money = prompt('ドルから円に換算します');
+                if(money) {
+                    console.log(getDollarToYen(money) + '円です');
+                } else break;
+            }
+        </script>
+
+        
+    </body>
+</html>

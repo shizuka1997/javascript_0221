@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <title>JavaScriptの練習・アニメーション</title>
+    </head>
+    <body>
+        <h1 id="text">こんにちは</h1>
+        <script>
+            // JavaScript を記述する場所
+            const h1 = document.getElementById("text");
+
+            let count = 0;
+
+            const timer = setInterval(() => {
+            // 繰り返し処理を止める
+        h1.style.fontSize = count + `px`;
+        count++;
+
+        if (count >= 100) clearInterval(timer);
+        }, 10);
+
+        </script>
+    </body>
+</html>

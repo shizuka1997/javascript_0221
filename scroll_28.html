@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <title>JavaScriptの練習・スクロール</title>
+        <link rel="stylesheet" type="text/css" href="scroll_28.css">
+    </head>
+    <body>
+        <div class="screenBlue">ここがトップページです</div>
+        <div class="screenRed">2ページ目</div>
+        <div class="screenBlue">3ページ目</div>
+        <div class="screenRed">4ページ目</div>
+        <div class="screenBlue">5ページ目</div>
+        <a class="pagetop" id="top" href="#">TOPに戻る</a>
+
+        <script>
+            // JavaScript を記述する場所
+            const topLink = document.getElementById("top");
+
+            window.addEventListener("scroll", () => {
+                const scrollValue = document.scrollingElement.scrollTop;
+
+                if (scrollValue >= 300) {
+                    topLink.style.display = "inline";
+                } else if (scrollValue < 300) {
+                    topLink.style.display = "none";
+                }
+            });
+
+        </script>
+
+    </body>
+</html>

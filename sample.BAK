@@ -1,0 +1,19 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>JavaScriptの練習</title>
+  </head>
+  <body>
+    <div id="text" class="sample">１つ目の項目</div>
+    
+    <script>
+      //ここにJavaScriptを記述する
+      //alert("よろしく");
+const text = document.getElementById('text').innerHTML;
+//alert(text + "です");
+    </script>
+  </body>
+</html>
+

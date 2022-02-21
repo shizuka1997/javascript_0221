@@ -1,0 +1,14 @@
+.decoration {
+    /* ここにCSSを書いていきます */
+    font-size: 48px;
+}
+.br{
+    padding: 2rem; 
+}
+.button{
+    background-color: #afeeee;
+}
+#msg{
+    background-color: #ff0000;
+    color: #ffffff;
+}
